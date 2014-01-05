@@ -64,7 +64,7 @@ public class MyWebSocket implements WebSocket, OnTextMessage, OnBinaryMessage {
 					e1.printStackTrace();
 				}
 				try {
-					System.out.println(String.format("Receiver: %s (%d)", sender.name, sender.id));
+					System.out.println(String.format("Receiver: %s (%d)", receiver.name, receiver.id));
 					receiver.socket.connection.sendMessage("GIFTY " + sender.name);
 				} catch (IOException e1) {
 					e1.printStackTrace();
