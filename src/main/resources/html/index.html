@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>WebSocket</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.css" />
+<link rel="stylesheet" href="common.css" rel="stylesheet" />
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.0/jquery.mobile-1.4.0.min.js"></script>
+<script src="common.js"></script>
+</head>
+<body>
+
+<!-- entrance -->
+<div data-role="page" id="entrance">
+<div data-role="header">
+	<h1>Christmas Party!</h1>
+</div>
+<div data-role="main" class="ui-content">
+	<div>
+		<p>Please input your name and hit &quot;Register&quot; to exchange presents :)</p>
+		<input type="text" id="entrance_name" />
+		<input type="button" id="entrance_register" value="Register" />
+	</div>
+	<div>
+		<p>Please input your ID and hit &quot;Login&quot; if you have any.</p>
+		<input type="text" id="entrance_old_id" />
+		<input type="button" id="entrance_login" value="Login" />
+	</div>
+	<div id="messages"></div>
+</div>
+</div>
+
+<!-- lounge -->
+<div data-role="page" id="lounge">
+<div data-role="header">
+	<h1>Present exchanger</h1>
+	<!--<a href="#list">List</a>-->
+</div>
+<div data-role="main" class="ui-content">
+	<div id="lounge_info">
+		<p>Welcome, <b id="lounge_name"></b>!</p>
+		<p>Your ID is <b id="lounge_id"></b>.</p>
+	</div>
+</div>
+</div>
+
+<!-- send -->
+<div data-role="page" id="send">
+<div data-role="header">
+	<h1>Present exchanger</h1>
+</div>
+<div data-role="main" class="ui-content">
+	<div>
+		<p>Please give your gift to <b id="gift_receiver_name"></b>!</p>
+	</div>
+</div>
+</div>
+
+<!-- receive -->
+<div data-role="page" id="receive">
+<div data-role="header">
+	<h1>Present exchanger</h1>
+</div>
+<div data-role="main" class="ui-content">
+	<div>
+		<p>Please receive the gift from <b id="gift_sender_name"></b>!</p>
+	</div>
+</div>
+</div>
+
+</body>
+</html>
